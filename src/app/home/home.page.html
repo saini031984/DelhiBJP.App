@@ -1,0 +1,54 @@
+<ion-content [fullscreen]="true"  >
+  <ion-grid class="h-100 p-0">
+    <ion-row class="h-100">
+
+      <ion-col class="login-image school-logo align-content-center text-center" size="12" size-md="6" size-sm="6">
+        <img src="../../assets/logo.png" alt="p2p-logo" class="w-50"   style=" width: 100px; height: 100px; border-radius: 70px; background-color: #fff;" />
+      </ion-col>
+
+
+      <ion-col class="login-form align-content-center " size="12" size-md="6" size-sm="6">
+        
+        <ion-row>
+          <ion-col>
+            <ion-input autocomplete="off" type="text" name="username" placeholder='Mobile NO' fill="outline"
+              [(ngModel)]="postData.Mobileno" class="login-input"></ion-input>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-input type="password" name="password" class="loginForm" placeholder='Password' fill="outline"
+              [(ngModel)]="postData.Password"  >
+              <ion-input-password-toggle slot="end" color="medium"></ion-input-password-toggle>
+            </ion-input>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="text-center fw-bold">
+            <ion-label class="text-light" routerLink='/recover'>
+              Unable to login?
+            </ion-label>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit" size="default" expand="block" fill="solid" (click)="loginAction()">
+              Login
+            </ion-button>
+          </ion-col>
+        </ion-row>
+
+      
+
+        <ion-row *ngIf="appInfo">
+          <ion-col class="text-center">
+            <p>v.{{appInfo.version}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

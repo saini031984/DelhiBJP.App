@@ -1,0 +1,33 @@
+.login-image {
+  background-image: url('../../assets/banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+ 
+  
+}
+
+.school-logo {
+  height: 50vh !important;
+}
+
+.login-form {
+  height: 50vh !important;
+  
+  color: white; 
+
+  ion-input.login-input {
+    --background: #fff;
+    --color: #000;
+  }
+}
+
+@media (orientation: landscape) {
+  .school-logo {
+    height: 100%;
+  }
+
+  .login-form {
+    height: 100%;
+  }
+}

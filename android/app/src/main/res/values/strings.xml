@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name"> JSR Booth Management</string>
+    <string name="title_activity_main"> JSR Booth Management</string>
+    <string name="package_name">jsr.itsolutions.org</string>
+    <string name="custom_url_scheme">jsr.itsolutions.org</string>
+</resources>

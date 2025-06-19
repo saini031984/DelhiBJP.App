@@ -1,0 +1,8 @@
+{
+  "name": "in.jsrsolution.com",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
